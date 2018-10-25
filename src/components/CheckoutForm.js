@@ -4,11 +4,12 @@ class CheckoutForm extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "",
-      reason: "",
-      bldg: "",
-      to: "",
-      ti: ""
+      // name: "",
+      // reason: "",
+      // bldg: "",
+      // to: "",
+      // ti: ""
+      details: []
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleName = this.handleName.bind(this);
@@ -51,6 +52,7 @@ class CheckoutForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
+          {console.log(this.state)}
           <div>
             <label>Name</label>
             <input type="text" name="name" onChange={this.handleName} />

@@ -6,10 +6,12 @@ class Summary extends React.Component {
   constructor() {
     super();
     this.state = {
-      details: ["one", "two"]
+      details: []
     };
   }
-  handleFormData(data) {}
+  handleFormData(data) {
+    console.log();
+  }
   render() {
     return (
       <div>
